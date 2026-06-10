@@ -10,7 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@400;500;600;800;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=6.7">
+    <link rel="stylesheet" href="style.css?v=7.4">
 </head>
 
 <body>
@@ -24,11 +24,11 @@
                 </a>
                 <nav>
                     <ul class="nav">
-                        <li><a href="#">О НАС</a></li>
-                        <li><a href="#">НОВОСТИ</a></li>
+                        <li><a href="#approach">О НАС</a></li>
+                        <li><a href="#news">НОВОСТИ</a></li>
                         <li><a href="#">СКАЧАТЬ</a></li>
-                        <li><a href="#">КАТАЛОГ</a></li>
-                        <li><a href="#">КУПИТЬ</a></li>
+                        <li><a href="#solutions">КАТАЛОГ</a></li>
+                        <li><a href="#footer">КУПИТЬ</a></li>
                     </ul>
                 </nav>
                 <div class="header-right">
@@ -38,6 +38,9 @@
                             <line x1="15.5" y1="15.5" x2="21" y2="21" />
                         </svg>
                     </button>
+                    <button class="hamburger" aria-label="Меню" aria-expanded="false">
+                        <span></span><span></span><span></span>
+                    </button>
                 </div>
             </div>
         </header>
@@ -45,9 +48,11 @@
         <!-- HERO SECTION -->
         <section class="hero">
 
-            <!-- Image column with diagonal clip -->
+            <!-- Image slider with diagonal clip -->
             <div class="hero__image">
-                <img src="assets/hero.png" alt="Server Room">
+                <div class="hero-slide active"><img src="assets/hero.png" alt="Слайд 1"></div>
+                <div class="hero-slide"><img src="assets/approach.png" alt="Слайд 2"></div>
+                <div class="hero-slide"><img src="assets/cont.png" alt="Слайд 3"></div>
             </div>
 
             <div class="hero-body">
@@ -72,12 +77,12 @@
             <!-- Slider navigation arrows -->
             <button class="arrow arrow-left" aria-label="Предыдущий слайд">
                 <svg width="14" height="34" viewBox="0 0 14 34" xmlns="http://www.w3.org/2000/svg">
-                    <polygon points="14,0 0,17 14,34" fill="#E31E24" />
+                    <polygon points="14,0 0,17 14,34" fill="#c21818" />
                 </svg>
             </button>
             <button class="arrow arrow-right" aria-label="Следующий слайд">
                 <svg width="14" height="34" viewBox="0 0 14 34" xmlns="http://www.w3.org/2000/svg">
-                    <polygon points="0,0 14,17 0,34" fill="#E31E24" />
+                    <polygon points="0,0 14,17 0,34" fill="#c21818" />
                 </svg>
             </button>
 
@@ -149,10 +154,10 @@
                     <div class="principle-icon">
                         <img src="assets/img/feature-1.png" alt="Понимание задач" class="principle-icon-img">
                     </div>
-                    <div class="principle-title">ПОНИМАНИЕ<br>ЗАДАЧ</div>
-                    <p class="principle-desc">Работа начинается<br>с анализа объекта и<br>условий
-                        его<br>эксплуатации.<br>Фиксируются<br>сценарии<br>использования и<br>требования к<br>инженерной
-                        среде.</p>
+                    <div class="principle-text">
+                        <div class="principle-title">ПОНИМАНИЕ ЗАДАЧ</div>
+                        <p class="principle-desc">Работа начинается с анализа объекта и условий его эксплуатации. Фиксируются сценарии использования и требования к инженерной среде.</p>
+                    </div>
                 </div>
 
                 <!-- 2: Согласованность систем -->
@@ -160,9 +165,10 @@
                     <div class="principle-icon">
                         <img src="assets/img/feature-2.png" alt="Согласованность систем" class="principle-icon-img">
                     </div>
-                    <div class="principle-title">СОГЛАСОВАННОСТЬ<br>СИСТЕМ</div>
-                    <p class="principle-desc">Инженерные<br>решения<br>связываются<br>в единую
-                        структуру.<br>Исключаются<br>конфликты<br>между элементами<br>инфраструктуры.</p>
+                    <div class="principle-text">
+                        <div class="principle-title">СОГЛАСОВАННОСТЬ СИСТЕМ</div>
+                        <p class="principle-desc">Инженерные решения связываются в единую структуру. Исключаются конфликты между элементами инфраструктуры.</p>
+                    </div>
                 </div>
 
                 <!-- 3: Точность реализации -->
@@ -170,9 +176,10 @@
                     <div class="principle-icon">
                         <img src="assets/img/feature-3.png" alt="Точность реализации" class="principle-icon-img">
                     </div>
-                    <div class="principle-title">ТОЧНОСТЬ<br>РЕАЛИЗАЦИИ</div>
-                    <p class="principle-desc">Проектные<br>параметры<br>переносятся в<br>реализацию<br>без
-                        отклонений.<br>Качество исполнения<br>определяет<br>корректность<br>работы системы.</p>
+                    <div class="principle-text">
+                        <div class="principle-title">ТОЧНОСТЬ РЕАЛИЗАЦИИ</div>
+                        <p class="principle-desc">Проектные параметры переносятся в реализацию без отклонений. Качество исполнения определяет корректность работы системы.</p>
+                    </div>
                 </div>
 
                 <!-- 4: Сопровождение на всех этапах -->
@@ -181,9 +188,10 @@
                         <img src="assets/img/feature-4.png" alt="Сопровождение на всех этапах"
                             class="principle-icon-img">
                     </div>
-                    <div class="principle-title">СОПРОВОЖДЕНИЕ<br>НА ВСЕХ ЭТАПАХ</div>
-                    <p class="principle-desc">Проект ведётся<br>через весь цикл<br>— от разработки<br>до ввода
-                        в<br>эксплуатацию.<br>Логика решений<br>сохраняется<br>в процессе<br>реализации.</p>
+                    <div class="principle-text">
+                        <div class="principle-title">СОПРОВОЖДЕНИЕ НА ВСЕХ ЭТАПАХ</div>
+                        <p class="principle-desc">Проект ведётся через весь цикл — от разработки до ввода в эксплуатацию. Логика решений сохраняется в процессе реализации.</p>
+                    </div>
                 </div>
 
                 <!-- 5: Поддержка и контроль -->
@@ -191,16 +199,17 @@
                     <div class="principle-icon">
                         <img src="assets/img/feature-5.png" alt="Поддержка и контроль" class="principle-icon-img">
                     </div>
-                    <div class="principle-title">ПОДДЕРЖКА<br>И КОНТРОЛЬ</div>
-                    <p class="principle-desc">После запуска<br>фиксируются рабочие<br>параметры системы.<br>При
-                        необходимости<br>выполняется<br>корректировка<br>эксплуатации.</p>
+                    <div class="principle-text">
+                        <div class="principle-title">ПОДДЕРЖКА И КОНТРОЛЬ</div>
+                        <p class="principle-desc">После запуска фиксируются рабочие параметры системы. При необходимости выполняется корректировка эксплуатации.</p>
+                    </div>
                 </div>
 
             </div>
         </section>
 
         <!-- STATS + SOLUTIONS SECTION -->
-        <section class="products-section">
+        <section class="products-section" id="solutions">
 
 
 
@@ -228,7 +237,7 @@
                         </div>
                     </div>
 
-                    <button class="btn-view-solutions">СМОТРЕТЬ РЕШЕНИЯ &nbsp;→</button>
+                    <a href="#solutions" class="btn-view-solutions">СМОТРЕТЬ РЕШЕНИЯ &nbsp;→</a>
 
                     <!-- Каталог -->
                     <div class="catalog-content">
@@ -267,33 +276,30 @@
             <!-- Product cards -->
             <div class="products-grid">
 
-                <div class="product-card">
+                <div class="product-card" data-category="industrial">
                     <img class="product-card-img" src="assets/1.png" alt="Прецизионные кондиционеры">
-                    <div class="product-card-title">ПРЕЗИНТАЦИОННЫЕ<br>КОНДИЦИОНЕРЫ</div>
-                    <p class="product-card-desc">Стабильный микроклимат для<br>технологических и
-                        чувствительных<br>процессов.</p>
+                    <div class="product-card-title">ПРЕЦИЗИОННЫЕ КОНДИЦИОНЕРЫ</div>
+                    <p class="product-card-desc">Стабильный микроклимат для технологических и чувствительных процессов.</p>
                     <div class="product-card-footer">
                         <a href="#" class="product-card-link btn-more">ПОДРОБНЕЕ <span
                                 class="btn-more-arrow"></span></a>
                     </div>
                 </div>
 
-                <div class="product-card">
+                <div class="product-card" data-category="commercial">
                     <img class="product-card-img" src="assets/2.png" alt="Центральные кондиционеры">
-                    <div class="product-card-title">ЦЕНТРАЛЬНЫЕ<br>КОНДИЦИОНЕРЫ</div>
-                    <p class="product-card-desc">Поддержка комфортных параметров<br>воздуха в зданиях любого назначения.
-                    </p>
+                    <div class="product-card-title">ЦЕНТРАЛЬНЫЕ КОНДИЦИОНЕРЫ</div>
+                    <p class="product-card-desc">Поддержка комфортных параметров воздуха в зданиях любого назначения.</p>
                     <div class="product-card-footer">
                         <a href="#" class="product-card-link btn-more">ПОДРОБНЕЕ <span
                                 class="btn-more-arrow"></span></a>
                     </div>
                 </div>
 
-                <div class="product-card">
+                <div class="product-card" data-category="infrastructure">
                     <img class="product-card-img" src="assets/3.png" alt="Чиллеры с воздушным охлаждением">
-                    <div class="product-card-title">ЧИЛЛЕРЫ С ВОЗДУШНЫМ<br>ОХЛАЖДЕНИЕМ</div>
-                    <p class="product-card-desc">Высокоэффективное решение для систем холодоснабжения коммерческих
-                        и<br>промышленных объектов.</p>
+                    <div class="product-card-title">ЧИЛЛЕРЫ С ВОЗДУШНЫМ ОХЛАЖДЕНИЕМ</div>
+                    <p class="product-card-desc">Высокоэффективное решение для систем холодоснабжения коммерческих и промышленных объектов.</p>
                     <div class="product-card-footer">
                         <a href="#" class="product-card-link btn-more">ПОДРОБНЕЕ <span
                                 class="btn-more-arrow"></span></a>
@@ -331,14 +337,14 @@
 
                 <!-- Sidebar -->
                 <div class="news-sidebar">
-                    <a href="#" class="news-cat active">Все новости</a>
-                    <a href="#" class="news-cat">Проекты</a>
-                    <a href="#" class="news-cat">Технологии</a>
-                    <a href="#" class="news-cat">Продукты</a>
-                    <a href="#" class="news-cat">Компания</a>
-                    <a href="#" class="news-cat">События</a>
-                    <a href="#" class="news-cat">Партнёрства</a>
-                    <a href="#" class="news-cat">Пресса о нас</a>
+                    <a href="#" class="news-cat active" data-category="all">Все новости</a>
+                    <a href="#" class="news-cat" data-category="projects">Проекты</a>
+                    <a href="#" class="news-cat" data-category="technologies">Технологии</a>
+                    <a href="#" class="news-cat" data-category="products">Продукты</a>
+                    <a href="#" class="news-cat" data-category="company">Компания</a>
+                    <a href="#" class="news-cat" data-category="events">События</a>
+                    <a href="#" class="news-cat" data-category="partnerships">Партнёрства</a>
+                    <a href="#" class="news-cat" data-category="press">Пресса о нас</a>
                 </div>
 
                 <!-- Main content -->
@@ -352,37 +358,37 @@
                             <button class="sort-opt">по популярности</button>
                         </div>
                         <div class="view-group">
-                            <button class="view-opt active">Сетка</button>
-                            <button class="view-opt">Список</button>
+                            <button class="view-btn view-opt active" data-view="grid">Сетка</button>
+                            <button class="view-btn view-opt" data-view="list">Список</button>
                         </div>
                     </div>
                     <hr class="news-divider">
 
                     <!-- News cards -->
-                    <div class="news-grid">
+                    <div class="news-cards news-grid">
 
-                        <div class="news-card">
+                        <div class="news-card" data-date="2026-06-05" data-views="120" data-category="projects">
                             <img class="news-card-img" src="assets/5.jpg" alt="Новость 1">
                             <div class="news-card-title">Завершён проект инженерных<br>систем для бизнес центра.</div>
-                            <p class="news-card-desc">Реализована система холодоснабжения<br>и вентиляции с применением чиллеров<br>доследнего поколения.</p>
+                            <p class="news-card-desc">Реализована система холодоснабжения<br>и вентиляции с применением чиллеров<br>последнего поколения.</p>
                             <div class="news-card-footer">
                                 <a href="#" class="news-card-link">ПОДРОБНЕЕ <span class="card-arrow">→</span></a>
                             </div>
                         </div>
 
-                        <div class="news-card">
+                        <div class="news-card" data-date="2026-06-08" data-views="340" data-category="technologies">
                             <img class="news-card-img" src="assets/6.jpg" alt="Новость 2">
                             <div class="news-card-title">Завершён проект инженерных<br>систем для бизнес центра.</div>
-                            <p class="news-card-desc">Реализована система холодоснабжения<br>и вентиляции с применением чиллеров<br>доследнего поколения.</p>
+                            <p class="news-card-desc">Реализована система холодоснабжения<br>и вентиляции с применением чиллеров<br>последнего поколения.</p>
                             <div class="news-card-footer">
                                 <a href="#" class="news-card-link">ПОДРОБНЕЕ <span class="card-arrow">→</span></a>
                             </div>
                         </div>
 
-                        <div class="news-card">
+                        <div class="news-card" data-date="2026-06-10" data-views="85" data-category="products">
                             <img class="news-card-img" src="assets/7.jpg" alt="Новость 3">
                             <div class="news-card-title">Завершён проект инженерных<br>систем для бизнес центра.</div>
-                            <p class="news-card-desc">Реализована система холодоснабжения<br>и вентиляции с применением чиллеров<br>доследнего поколения.</p>
+                            <p class="news-card-desc">Реализована система холодоснабжения<br>и вентиляции с применением чиллеров<br>последнего поколения.</p>
                             <div class="news-card-footer">
                                 <a href="#" class="news-card-link">ПОДРОБНЕЕ <span class="card-arrow">→</span></a>
                             </div>
@@ -395,22 +401,20 @@
 
         </section>
 
-        <script>
-            document.addEventListener('DOMContentLoaded', () => {
-                const tabs = document.querySelectorAll('.tab');
-                tabs.forEach(tab => {
-                    tab.addEventListener('click', () => {
-                        tabs.forEach(t => t.classList.remove('active'));
-                        tab.classList.add('active');
-                    });
-                });
-            });
-        </script>
+
+
+        <!-- SEARCH OVERLAY -->
+        <div class="search-overlay" id="searchOverlay">
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Поиск на сайте...">
+                <button class="search-close" aria-label="Закрыть поиск">&times;</button>
+            </div>
+        </div>
 
     </div>
 
     <!-- FOOTER — вне page-wrapper, на всю ширину -->
-    <footer class="site-footer">
+    <footer class="site-footer" id="footer">
         <div class="footer-bg">
             <img src="assets/8.jpg" alt="" class="footer-bg-img">
             <div class="footer-overlay"></div>
@@ -421,11 +425,11 @@
                     <img src="assets/logo_cropped.png" alt="AMBIT" class="footer-logo-img">
                 </a>
                 <nav class="footer-nav">
-                    <a href="#">О НАС</a>
-                    <a href="#">НОВОСТИ</a>
+                    <a href="#approach">О НАС</a>
+                    <a href="#news">НОВОСТИ</a>
                     <a href="#">СКАЧАТЬ</a>
-                    <a href="#">КАТАЛОГ</a>
-                    <a href="#">КУПИТЬ</a>
+                    <a href="#solutions">КАТАЛОГ</a>
+                    <a href="#footer">КУПИТЬ</a>
                     <button class="footer-search-btn" aria-label="Поиск">
                         <svg viewBox="0 0 24 24">
                             <circle cx="10.5" cy="10.5" r="6.5" />
@@ -442,6 +446,9 @@
             </div>
         </div>
     </footer>
+
+    <!-- Main JS logic -->
+    <script src="assets/js/main.js?v=1.1"></script>
 </body>
 
 </html>
