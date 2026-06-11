@@ -86,6 +86,23 @@ document.addEventListener('DOMContentLoaded', () => {
             startAutoPlay();
         });
 
+        // Touch swipe support
+        let touchStartX = 0;
+        let touchStartY = 0;
+
+        heroSection?.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].clientX;
+            touchStartY = e.changedTouches[0].clientY;
+        }, { passive: true });
+
+        heroSection?.addEventListener('touchend', (e) => {
+            const dx = e.changedTouches[0].clientX - touchStartX;
+            const dy = e.changedTouches[0].clientY - touchStartY;
+            if (Math.abs(dx) < 40 || Math.abs(dx) < Math.abs(dy)) return;
+            goToSlide(dx < 0 ? currentSlide + 1 : currentSlide - 1);
+            resetAutoPlay();
+        }, { passive: true });
+
         startAutoPlay();
     }
 
