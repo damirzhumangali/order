@@ -2961,31 +2961,70 @@ body {
         font-size: 12px;
     }
 
-    /* Footer dark header */
+    /* Footer dark header — 390px fix */
     .footer-header {
         height: auto;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 12px;
-        padding: 16px 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0;
+        padding: 14px 0;
+        row-gap: 12px;
     }
 
+    /* Logo: left, takes ~auto width */
+    .footer-logo {
+        flex: 1;
+        order: 1;
+    }
+
+    .footer-logo-img {
+        height: 32px;
+    }
+
+    /* Search: inline with nav links on the right */
+    .footer-search-btn {
+        display: flex;
+        flex-shrink: 0;
+        margin-left: auto;
+    }
+
+    .footer-search-btn svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* Nav links: full-width row below logo, placed on the dark window glazing */
     .footer-nav {
-        flex-wrap: wrap;
-        gap: 10px 14px;
+        order: 3;
+        flex-basis: 100%;
+        flex-wrap: nowrap; /* prevent wrapping to keep search button inline */
+        gap: 8px 12px;
         margin-right: 0;
         width: 100%;
+        justify-content: flex-start;
+        display: flex;
+        align-items: center;
+        margin-top: 6px; /* push down into the glazing */
     }
 
     .footer-nav a {
         font-size: 11px;
+        letter-spacing: 0.3px;
+        white-space: nowrap;
     }
 
+    /* Social icons: full-width row at bottom, left-aligned on the same vertical line */
     .footer-socials {
-        margin-left: 0;
+        order: 4;
+        flex-basis: 100%;
+        margin-left: -8px; /* offset the 8px centering gap of the first icon to align with text */
         gap: 14px;
         width: 100%;
         justify-content: flex-start;
+        display: flex;
+        align-items: center;
+        margin-top: 6px; /* push down slightly to align inside glazing */
     }
 
     .footer-social img {
