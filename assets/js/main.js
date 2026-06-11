@@ -86,20 +86,58 @@ document.addEventListener('DOMContentLoaded', () => {
             startAutoPlay();
         });
 
-        // Touch swipe support
+        // Drag and Swipe support (Touch & Mouse)
+        const heroImageContainer = document.querySelector('.hero__image');
         let touchStartX = 0;
+        let isDragging = false;
 
-        heroSection?.addEventListener('touchstart', (e) => {
+        // Prevent browser image drag-and-drop ghosting
+        const sliderImages = heroImageContainer?.querySelectorAll('img');
+        sliderImages?.forEach(img => {
+            img.addEventListener('dragstart', e => e.preventDefault());
+        });
+
+        // Touch swipe support
+        heroImageContainer?.addEventListener('touchstart', (e) => {
             touchStartX = e.touches[0].clientX;
+            isDragging = true;
         }, { passive: true });
 
-        heroSection?.addEventListener('touchend', (e) => {
+        heroImageContainer?.addEventListener('touchend', (e) => {
+            if (!isDragging) return;
+            isDragging = false;
             const diff = touchStartX - e.changedTouches[0].clientX;
             if (Math.abs(diff) > 50) {
                 goToSlide(diff > 0 ? currentSlide + 1 : currentSlide - 1);
                 resetAutoPlay();
             }
         }, { passive: true });
+
+        // Mouse drag support
+        heroImageContainer?.addEventListener('mousedown', (e) => {
+            if (e.button !== 0) return; // only left click
+            touchStartX = e.clientX;
+            isDragging = true;
+            if (heroImageContainer) heroImageContainer.style.cursor = 'grabbing';
+        });
+
+        heroImageContainer?.addEventListener('mouseup', (e) => {
+            if (!isDragging) return;
+            isDragging = false;
+            if (heroImageContainer) heroImageContainer.style.cursor = 'grab';
+            const diff = touchStartX - e.clientX;
+            if (Math.abs(diff) > 50) {
+                goToSlide(diff > 0 ? currentSlide + 1 : currentSlide - 1);
+                resetAutoPlay();
+            }
+        });
+
+        heroImageContainer?.addEventListener('mouseleave', () => {
+            if (isDragging) {
+                isDragging = false;
+                if (heroImageContainer) heroImageContainer.style.cursor = 'grab';
+            }
+        });
 
         startAutoPlay();
     }

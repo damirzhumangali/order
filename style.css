@@ -197,6 +197,7 @@ body {
     z-index: 1;
     clip-path: polygon(11% 0, 100% 0, 100% 100%, 50% 100%);
     overflow: hidden;
+    cursor: grab;
 }
 
 .hero-slide {
@@ -216,6 +217,8 @@ body {
     object-fit: cover;
     object-position: right center;
     display: block;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 /* Hamburger */
