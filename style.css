@@ -927,7 +927,7 @@ body {
 }
 
 .sort-opt.active {
-    color: #bf1d28;
+    color: #bc0000;
     font-weight: 600;
     font-size: 15px;
 }
@@ -954,7 +954,7 @@ body {
 }
 
 .view-opt.active {
-    color: #bf1d28;
+    color: #bc0000;
     font-weight: 600;
 }
 
@@ -1015,7 +1015,7 @@ body {
     font-weight: 600;
     letter-spacing: 1.5px;
     text-transform: uppercase;
-    color: #bf1d28;
+    color: #bc0000;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
@@ -1024,7 +1024,7 @@ body {
 }
 
 .news-card-link:hover {
-    color: #bf1d28;
+    color: #bc0000;
     opacity: 0.85;
 }
 
