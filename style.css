@@ -617,7 +617,7 @@ body {
     font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #999;
+    color: #bbbdc0;
     cursor: pointer;
     white-space: nowrap;
     user-select: none;
@@ -904,7 +904,7 @@ body {
 }
 
 .sort-label {
-    color: #999;
+    color: #bbbdc0;
     font-weight: 500;
     font-family: 'Montserrat', sans-serif;
 }
@@ -916,7 +916,7 @@ body {
     font-size: 13px;
     cursor: pointer;
     padding: 0;
-    color: #999;
+    color: #bbbdc0;
     font-weight: 500;
     transition: color 0.2s;
     font-size: 15px;
@@ -944,7 +944,7 @@ body {
     font-size: 15px;
     cursor: pointer;
     padding: 0;
-    color: #999;
+    color: #bbbdc0;
     font-weight: 500;
     transition: color 0.2s;
 }
