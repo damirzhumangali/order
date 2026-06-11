@@ -36,7 +36,7 @@ body {
 }
 
 .comma {
-    color: #bb0000;
+    color: #bf1d28;
     font-family: inherit;
     font-size: inherit;
     font-weight: inherit;
@@ -109,7 +109,7 @@ body {
 }
 
 .nav a:hover {
-    color: #bb0000;
+    color: #bf1d28;
 }
 
 .search-btn {
@@ -304,13 +304,13 @@ body {
     font-weight: 700;
     letter-spacing: 2.5px;
     text-transform: uppercase;
-    color: #bb0000;
+    color: #bf1d28;
     text-decoration: none;
     cursor: pointer;
 }
 
 .btn-explore {
-    background: #bb0000;
+    background: #bf1d28;
     color: #fff;
     border: none;
     padding: 11px 28px 11px 18px;
@@ -329,7 +329,7 @@ body {
 }
 
 .btn-explore:hover {
-    background: #bb0000;
+    background: #bf1d28;
     filter: brightness(0.85);
 }
 
@@ -540,7 +540,7 @@ body {
     align-items: center;
     justify-content: center;
     width: fit-content;
-    background: #bb0000;
+    background: #bf1d28;
     color: #fff;
     border: none;
     padding: 9px 16px;
@@ -557,7 +557,7 @@ body {
 }
 
 .btn-view-solutions:hover {
-    background: #bb0000;
+    background: #bf1d28;
     filter: brightness(0.85);
 }
 
@@ -629,8 +629,8 @@ body {
 }
 
 .tab.active {
-    color: #bb0000;
-    border-bottom-color: #bb0000;
+    color: #bf1d28;
+    border-bottom-color: #bf1d28;
 }
 
 .tab:hover:not(.active) {
@@ -698,7 +698,7 @@ body {
 }
 
 .product-card-link:hover {
-    color: #bb0000;
+    color: #bf1d28;
 }
 
 .btn-more-arrow {
@@ -748,7 +748,7 @@ body {
 }
 
 .btn-catalog {
-    background: #bb0000;
+    background: #bf1d28;
     color: #fff;
     border: none;
     padding: 10px 24px;
@@ -765,7 +765,7 @@ body {
 }
 
 .btn-catalog:hover {
-    background: #bb0000;
+    background: #bf1d28;
     filter: brightness(0.85);
 }
 
@@ -863,11 +863,11 @@ body {
 }
 
 .news-cat:hover {
-    color: #bb0000;
+    color: #bf1d28;
 }
 
 .news-cat.active {
-    color: #bb0000;
+    color: #bf1d28;
     font-weight: 600;
 }
 
@@ -880,7 +880,7 @@ body {
     transform: translateY(-50%);
     width: 8px;
     height: 20px;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='20' viewBox='0 0 14 34'%3E%3Cpolygon points='0,0 14,17 0,34' fill='%23bb0000'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='20' viewBox='0 0 14 34'%3E%3Cpolygon points='0,0 14,17 0,34' fill='%23bf1d28'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -927,7 +927,7 @@ body {
 }
 
 .sort-opt.active {
-    color: #bb0000;
+    color: #bf1d28;
     font-weight: 600;
     font-size: 15px;
 }
@@ -954,7 +954,7 @@ body {
 }
 
 .view-opt.active {
-    color: #bb0000;
+    color: #bf1d28;
     font-weight: 600;
 }
 
@@ -1015,7 +1015,7 @@ body {
     font-weight: 600;
     letter-spacing: 1.5px;
     text-transform: uppercase;
-    color: #bb0000;
+    color: #bf1d28;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
@@ -1024,7 +1024,7 @@ body {
 }
 
 .news-card-link:hover {
-    color: #bb0000;
+    color: #bf1d28;
     opacity: 0.85;
 }
 
@@ -1124,7 +1124,7 @@ body {
 }
 
 .footer-nav a:hover {
-    color: #bb0000;
+    color: #bf1d28;
 }
 
 .footer-search-btn {
@@ -1148,7 +1148,7 @@ body {
 }
 
 .footer-search-btn:hover svg {
-    stroke: #bb0000;
+    stroke: #bf1d28;
 }
 
 .footer-socials {
@@ -1561,8 +1561,8 @@ body {
     }
 
     .tab.active {
-        color: #bb0000;
-        border-bottom-color: #bb0000;
+        color: #bf1d28;
+        border-bottom-color: #bf1d28;
     }
 
     /* Products grid — 3 columns on tablet */
@@ -2486,7 +2486,7 @@ body {
     }
 
     .tab.active {
-        border-bottom-color: #bb0000;
+        border-bottom-color: #bf1d28;
     }
 
     .products-grid {
@@ -3094,7 +3094,7 @@ body {
     font-size: 22px;
     font-family: 'Montserrat', sans-serif;
     outline: none;
-    border-bottom: 2px solid #bb0000;
+    border-bottom: 2px solid #bf1d28;
     padding: 8px 0;
     color: #1d262a;
 }
@@ -3114,7 +3114,7 @@ body {
 }
 
 .search-close:hover {
-    color: #bb0000;
+    color: #bf1d28;
 }
 
 .hero-heading,
