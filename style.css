@@ -79,7 +79,7 @@ body {
     display: flex;
     align-items: center;
     text-decoration: none;
-    margin-left: -20px;
+    margin-left: -2px;
 }
 
 .logo-img {
@@ -2759,7 +2759,7 @@ body {
     }
 
     .logo {
-        margin-left: -14px;
+        margin-left: -2px;
     }
 
     .logo-img {
