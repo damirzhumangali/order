@@ -630,7 +630,7 @@ body {
 
 .tab.active {
     color: #bb0000;
-    border-bottom-color: #bf1d28;
+    border-bottom-color: #bb0000;
 }
 
 .tab:hover:not(.active) {
@@ -1562,7 +1562,7 @@ body {
 
     .tab.active {
         color: #bb0000;
-        border-bottom-color: #bf1d28;
+        border-bottom-color: #bb0000;
     }
 
     /* Products grid — 3 columns on tablet */
@@ -2487,7 +2487,7 @@ body {
 
     .tab.active {
         color: #bb0000;
-        border-bottom-color: #bf1d28;
+        border-bottom-color: #bb0000;
     }
 
     .products-grid {
