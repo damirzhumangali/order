@@ -15,7 +15,7 @@ html {
 body {
     font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
     background: #eeeff2;
-    color: #111;
+    color: #1d262a;
     margin: 0;
 }
 
@@ -79,7 +79,7 @@ body {
     display: flex;
     align-items: center;
     text-decoration: none;
-    margin-left: -2px;
+    margin-left: -12px;
 }
 
 .logo-img {
@@ -93,12 +93,12 @@ body {
 
     gap: 80px;
     list-style: none;
-    margin-left: 290px;
+    margin-left: 250px;
 }
 
 .nav a {
     text-decoration: none;
-    color: #111;
+    color: #1d262a;
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 1px;
@@ -125,7 +125,7 @@ body {
 .search-btn svg {
     width: 32px;
     height: 32px;
-    stroke: #111;
+    stroke: #1d262a;
     fill: none;
     stroke-width: 1.5;
     stroke-linecap: round;
@@ -184,7 +184,7 @@ body {
     font-size: 22px;
     line-height: 1.4;
     max-width: 380px;
-    color: #1A1A1A;
+    color: #121e23;
     font-weight: 400;
 }
 
@@ -234,7 +234,7 @@ body {
     display: block;
     width: 24px;
     height: 2px;
-    background: #111;
+    background: #1d262a;
     transition: transform 0.3s, opacity 0.3s;
 }
 
@@ -477,7 +477,7 @@ body {
     font-weight: 500;
     letter-spacing: 0.5px;
     text-transform: uppercase;
-    color: #111;
+    color: #1d262a;
     margin-bottom: 30px;
     line-height: 1.5;
 }
@@ -582,7 +582,7 @@ body {
 .catalog-heading {
     font-size: 43px;
     font-weight: 800;
-    color: #111;
+    color: #1d262a;
     text-transform: uppercase;
     line-height: 1.05;
     margin: 0 0 14px;
@@ -843,7 +843,7 @@ body {
     font-family: 'Montserrat', system-ui, -apple-system, sans-serif;
     font-size: 16px;
     font-weight: 500;
-    color: #1A1A1A;
+    color: #121e23;
     text-decoration: none;
     padding: 3px 0;
     padding-left: 20px;
@@ -1039,7 +1039,7 @@ body {
     margin: 0;
     min-height: 620px;
     overflow: hidden;
-    background-color: #1a1a1a;
+    background-color: #121e23;
     background-image: url('assets/8.jpg');
     background-size: cover;
     background-position: center center;
@@ -1285,7 +1285,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 0;
-    grid-template-columns: 1fr; /* reset grid fallback */
+    grid-template-columns: 1fr;
+    /* reset grid fallback */
 }
 
 .news-cards.news-grid.list-view .news-card {
@@ -1515,7 +1516,7 @@ body {
     .catalog-heading {
         font-size: 30px;
         font-weight: 800;
-        color: #111;
+        color: #1d262a;
         text-transform: uppercase;
         line-height: 1.05;
         margin: 0;
@@ -2035,19 +2036,21 @@ body {
     /* Header */
     .page-wrapper {
         padding-top: 0;
-        overflow: visible; /* fix: overflow:hidden breaks position:sticky */
+        overflow: visible;
+        /* fix: overflow:hidden breaks position:sticky */
     }
 
     .header {
         padding: 0 16px;
         height: 56px;
-        position: fixed;   /* fixed is more reliable than sticky on mobile */
+        position: fixed;
+        /* fixed is more reliable than sticky on mobile */
         top: 0;
         left: 0;
         right: 0;
         z-index: 200;
         background: #eeeff2;
-        box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
     }
 
     .header__inner {
@@ -2127,7 +2130,8 @@ body {
         height: auto;
         min-height: auto;
         background: #eeeff2;
-        padding-top: 56px; /* offset for fixed header */
+        padding-top: 56px;
+        /* offset for fixed header */
     }
 
     .hero-body {
@@ -2249,7 +2253,8 @@ body {
     }
 
     .arrow {
-        top: calc(56px + 110px); /* fixed header + half of hero image height */
+        top: calc(56px + 110px);
+        /* fixed header + half of hero image height */
         width: 32px;
         height: 32px;
         z-index: 20;
@@ -3006,14 +3011,16 @@ body {
     .footer-nav {
         order: 3;
         flex-basis: 100%;
-        flex-wrap: nowrap; /* prevent wrapping to keep search button inline */
+        flex-wrap: nowrap;
+        /* prevent wrapping to keep search button inline */
         gap: 8px 12px;
         margin-right: 0;
         width: 100%;
         justify-content: flex-start;
         display: flex;
         align-items: center;
-        margin-top: 6px; /* push down into the glazing */
+        margin-top: 6px;
+        /* push down into the glazing */
     }
 
     .footer-nav a {
@@ -3026,13 +3033,15 @@ body {
     .footer-socials {
         order: 4;
         flex-basis: 100%;
-        margin-left: -8px; /* offset the 8px centering gap of the first icon to align with text */
+        margin-left: -8px;
+        /* offset the 8px centering gap of the first icon to align with text */
         gap: 14px;
         width: 100%;
         justify-content: flex-start;
         display: flex;
         align-items: center;
-        margin-top: 6px; /* push down slightly to align inside glazing */
+        margin-top: 6px;
+        /* push down slightly to align inside glazing */
     }
 
     .footer-social img {
@@ -3082,7 +3091,7 @@ body {
     outline: none;
     border-bottom: 2px solid #bf1d28;
     padding: 8px 0;
-    color: #111;
+    color: #1d262a;
 }
 
 .search-close {
@@ -3090,7 +3099,7 @@ body {
     border: none;
     font-size: 32px;
     cursor: pointer;
-    color: #111;
+    color: #1d262a;
     padding: 5px;
     display: flex;
     align-items: center;
