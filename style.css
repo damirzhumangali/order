@@ -1111,7 +1111,7 @@ body {
 
 .footer-nav a {
     text-decoration: none;
-    color: #ffffff;
+    color: #2e3537;
     font-size: 15px;
     font-weight: 600;
     letter-spacing: 1px;
@@ -1136,7 +1136,7 @@ body {
 .footer-search-btn svg {
     width: 34px;
     height: 34px;
-    stroke: #ffffff;
+    stroke: #2e3537;
     fill: none;
     stroke-width: 2;
     stroke-linecap: round;
