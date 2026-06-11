@@ -521,7 +521,7 @@ body {
 .stat-num {
     font-size: 48px;
     font-weight: 700;
-    color: #bf1d28;
+    color: #bb0000;
     line-height: 1;
     letter-spacing: -1.5px;
 }
@@ -529,7 +529,7 @@ body {
 .stat-label {
     display: block;
     font-size: 16px;
-    color: #bf1d28;
+    color: #bb0000;
     line-height: 1.4;
     margin-top: 6px;
     font-weight: 400;
@@ -1507,7 +1507,7 @@ body {
 
     .stat-label {
         font-size: 12px;
-        color: #bf1d28;
+        color: #bb0000;
     }
 
     .catalog-content {
