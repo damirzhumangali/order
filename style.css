@@ -2755,6 +2755,10 @@ body {
         padding: 10px 14px;
     }
 
+    .logo {
+        margin-left: -14px;
+    }
+
     .logo-img {
         height: 30px;
     }
@@ -2976,6 +2980,7 @@ body {
     .footer-logo {
         flex: 1;
         order: 1;
+        margin-left: -14px;
     }
 
     .footer-logo-img {
