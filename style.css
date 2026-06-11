@@ -2264,11 +2264,11 @@ body {
     }
 
     .arrow-left {
-        left: 4px;
+        left: -8px;
     }
 
     .arrow-right {
-        right: 4px;
+        right: -8px;
     }
 
     /* Approach */
