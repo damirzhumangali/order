@@ -2124,6 +2124,7 @@ body {
     .hero {
         display: flex;
         flex-direction: column;
+        height: auto;
         min-height: auto;
         background: #EFEFF1;
         padding-top: 56px; /* offset for fixed header */
@@ -2134,6 +2135,7 @@ body {
         display: block;
         width: 100%;
         position: static;
+        flex: none;
     }
 
     .hero__inner {
