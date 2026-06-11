@@ -5,17 +5,17 @@ document.addEventListener('DOMContentLoaded', () => {
     // ==========================================
     const slideData = [
         {
-            img: 'assets/hero.png',
+            img: 'assets/hero.webp',
             heading: 'СТАБИЛЬНОСТЬ<span class="comma">,</span><br>СОЗДАЮЩАЯ<br>КОМФОРТ',
             desc: 'Системная целостность инженерных систем сохраняет среду в заданных параметрах, делая комфорт естественным состоянием пространства.'
         },
         {
-            img: 'assets/approach.png',
+            img: 'assets/approach.webp',
             heading: 'ПЕРЕДОВЫЕ<br>ТЕХНОЛОГИИ<br>И СИСТЕМЫ',
             desc: 'Мы создаем современные решения для вентиляции, кондиционирования и отопления зданий любого масштаба.'
         },
         {
-            img: 'assets/cont.png',
+            img: 'assets/cont.webp',
             heading: 'КОНТРОЛЬ И<br>НАДЕЖНОСТЬ<br>РЕШЕНИЙ',
             desc: 'Профессиональное сопровождение на каждом этапе — от проектирования до долгосрочного сервисного обслуживания.'
         }
@@ -68,6 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         function startAutoPlay() {
+            clearInterval(autoplayInterval);
             autoplayInterval = setInterval(() => {
                 goToSlide(currentSlide + 1);
             }, 6000);
