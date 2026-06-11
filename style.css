@@ -2035,47 +2035,54 @@ body {
     /* Header */
     .page-wrapper {
         padding-top: 0;
+        overflow: visible; /* fix: overflow:hidden breaks position:sticky */
     }
 
     .header {
-        padding: 12px 16px;
-        height: auto;
-        position: sticky;
+        padding: 0 16px;
+        height: 56px;
+        position: fixed;   /* fixed is more reliable than sticky on mobile */
         top: 0;
-        z-index: 100;
+        left: 0;
+        right: 0;
+        z-index: 200;
+        background: #EFEFF1;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.08);
     }
 
     .header__inner {
         padding: 0;
         gap: 0;
         height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .logo-img {
-        height: 36px;
+        height: 34px;
     }
 
     .logo {
-        font-size: 20px;
         margin-left: 0;
     }
 
     .nav {
-        display: none;
+        display: none !important;
         margin-left: 0;
     }
 
     .nav.mobile-open {
-        display: flex;
+        display: flex !important;
         flex-direction: column;
         gap: 0;
         position: fixed;
-        top: 60px;
+        top: 56px;
         left: 0;
         right: 0;
         background: #EFEFF1;
         padding: 20px 16px;
-        z-index: 99;
+        z-index: 199;
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
     }
 
@@ -2099,46 +2106,46 @@ body {
     }
 
     .search-btn svg {
-        width: 24px;
-        height: 24px;
+        width: 22px;
+        height: 22px;
     }
 
     .header-right {
-        gap: 12px;
-        font-size: 16px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
     }
 
     .hamburger {
         display: flex;
     }
 
-    /* Hero */
+    /* Hero — normal column order: image → text → footer */
     .hero {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         min-height: auto;
         background: #EFEFF1;
+        padding-top: 56px; /* offset for fixed header */
     }
 
     .hero-body {
-        flex-direction: column;
-        position: static;
+        order: 2;
         display: block;
         width: 100%;
-        order: 2;
+        position: static;
     }
 
     .hero__inner {
-        flex-direction: column;
-        position: static;
         display: block;
         width: 100%;
         padding: 0;
+        position: static;
     }
 
     .hero-left {
         width: 100%;
-        padding: 24px 16px 16px 16px;
+        padding: 20px 16px 16px;
         position: static;
         background: #EFEFF1;
     }
@@ -2147,26 +2154,26 @@ body {
         font-size: 26px;
         font-weight: 900;
         line-height: 1.15;
-        margin-bottom: 16px;
+        margin-bottom: 14px;
     }
 
     .hero-desc {
         font-size: 14px;
         line-height: 1.6;
-        margin-bottom: 20px;
+        margin-bottom: 16px;
         max-width: 100%;
     }
 
     .hero__image {
+        order: 1;
         position: relative;
         width: 100%;
-        height: 260px;
+        height: 220px;
         clip-path: none;
         top: auto;
         bottom: auto;
         right: auto;
-        order: 3;
-        margin-top: 12px;
+        margin-top: 0;
     }
 
     .hero__image img {
@@ -2176,10 +2183,10 @@ body {
     }
 
     .hero-footer {
-        padding: 0 16px 40px;
+        order: 3;
+        padding: 0 16px 32px;
         flex-wrap: wrap;
-        gap: 16px;
-        order: 1;
+        gap: 12px;
         background: #EFEFF1;
     }
 
@@ -2239,10 +2246,9 @@ body {
     }
 
     .arrow {
-        top: 142px;
-        width: 16px;
+        top: calc(56px + 110px); /* fixed header + half of hero image height */
+        width: 32px;
         height: 32px;
-        font-size: 14px;
         z-index: 20;
         display: flex;
         align-items: center;
@@ -2255,11 +2261,11 @@ body {
     }
 
     .arrow-left {
-        left: 0;
+        left: 4px;
     }
 
     .arrow-right {
-        right: 0;
+        right: 4px;
     }
 
     /* Approach */
